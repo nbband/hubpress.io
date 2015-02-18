@@ -1,0 +1,18 @@
+{{!< default}}
+{{> header}}
+
+<section id="tantum-content" role="main">
+  <div class="container">
+
+    <article class="tantum-post-detail {{post_class}}">
+      {{#post}}
+        <h1 class="post-title hidden">{{title}}</h1>
+
+        <div class="post-content col-4">
+          {{content}}
+        </div>
+      {{/post}}
+    </article>
+
+  </div>
+</section>

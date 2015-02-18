@@ -1,0 +1,38 @@
+{{!< default}}
+{{> header}}
+
+{{! The main content area on the homepage }}
+<section id="tantum-content" role="main">
+
+  <h3 class="content-title">Updates</h3>
+
+  <div class="container">
+
+    {{! Each post will be output using this markup }}
+    {{#foreach posts}}
+      <article class="tantum-post-preview {{post_class}}">
+        <a href="{{url}}" title="View post">
+          <div class="post-preview">
+            <div class="wrap">{{content words="0"}}</div>
+          </div>
+
+          <div class="post-details">
+            <span><span>
+              <h3>{{title}}</h3>
+              <div><time datetime="{{date format="YYYY-MM-DD"}}">{{date format="DD MMMM YYYY"}}</time></div>
+            </span></span>
+          </div>
+        </a>
+      </article>
+    {{/foreach}}
+
+  </div>
+
+  {{pagination}}
+</section>
+
+<!--
+<script type="text/javascript" rel="javascript" src="{{asset "js/aurora_slim.min.js"}}"></script>
+<script type="text/javascript" rel="javascript" src="{{asset "js/flac.min.js"}}"></script>
+<script type="text/javascript" rel="javascript" src="{{asset "js/aurora-websocket.min.js"}}"></script>
+-->
