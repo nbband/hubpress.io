@@ -1,0 +1,27 @@
+{{!< default}}
+{{> header}}
+
+<section id="tantum-content" role="main">
+  <div class="container">
+
+    <article class="tantum-post-detail {{post_class}}">
+      {{#post}}
+        <h1 class="post-title hidden">{{title}}</h1>
+
+        <div class="post-meta col-1">
+          <time datetime="{{date format='YYYY-MM-DD'}}">
+            <span class="day">Posted on {{date format="D"}}</span>
+            <span class="month">{{date format="MMMM"}}</span>
+          </time>
+
+          {{#if tags}}<p class="tags"> in {{tags}}</p>{{/if}}
+        </div>
+
+        <div class="post-content col-3">
+          {{content}}
+        </div>
+      {{/post}}
+    </article>
+
+  </div>
+</section>

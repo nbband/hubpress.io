@@ -1,0 +1,15 @@
+{
+  "files": {
+    "analytics": "partials/analytics.hbs",
+    "author": "partials/author.hbs",
+    "footer": "partials/footer.hbs",
+    "header": "partials/header.hbs",
+    "navigation": "partials/navigation.hbs",
+    "pagination": "partials/pagination.hbs",
+    "default": "default.hbs",
+    "index": "index.hbs",
+    "page": "page.hbs",
+    "post": "post.hbs"
+  },
+  "version":"1.0.0"
+}

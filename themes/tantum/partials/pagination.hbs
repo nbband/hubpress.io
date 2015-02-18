@@ -1,0 +1,17 @@
+<nav id="tantum-pagination" role="pagination">
+  <div class="container">
+    {{#if prev}}
+      <div class="col-1 newer-posts">
+        <a class="button" href="{{pageUrl prev}}" rel="prev">&laquo; Newer</a>
+      </div>
+    {{/if}}
+
+    <span class="{{#if prev}}{{else}}col-offset-1 {{/if}}col-2 page-number">Page {{page}} of {{pages}}</span>
+
+    {{#if next}}
+      <div class="col-1 older-posts">
+        <a class="button" href="{{pageUrl next}}" rel="next">Older &raquo;</a>
+      </div>
+    {{/if}}
+  </div>
+</nav>
